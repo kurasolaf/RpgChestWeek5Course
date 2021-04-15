@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kuras\\Source\\Repos\\kurasolaf\\RpgChest\\RpgChest.csproj": {}
+    "C:\\Users\\kuras\\source\\repos\\kurasolaf\\RpgChestWeek4\\RpgChest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kuras\\Source\\Repos\\kurasolaf\\RpgChest\\RpgChest.csproj": {
+    "C:\\Users\\kuras\\source\\repos\\kurasolaf\\RpgChestWeek4\\RpgChest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kuras\\Source\\Repos\\kurasolaf\\RpgChest\\RpgChest.csproj",
+        "projectUniqueName": "C:\\Users\\kuras\\source\\repos\\kurasolaf\\RpgChestWeek4\\RpgChest.csproj",
         "projectName": "RpgChest",
-        "projectPath": "C:\\Users\\kuras\\Source\\Repos\\kurasolaf\\RpgChest\\RpgChest.csproj",
+        "projectPath": "C:\\Users\\kuras\\source\\repos\\kurasolaf\\RpgChestWeek4\\RpgChest.csproj",
         "packagesPath": "C:\\Users\\kuras\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kuras\\Source\\Repos\\kurasolaf\\RpgChest\\obj\\",
+        "outputPath": "C:\\Users\\kuras\\source\\repos\\kurasolaf\\RpgChestWeek4\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
