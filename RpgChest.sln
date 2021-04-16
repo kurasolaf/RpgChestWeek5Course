@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RpgChest", "RpgChest.csproj", "{06A7B9CA-26B0-4431-B004-751356286388}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RpgChest.Test", "..\RpgChest.Test\RpgChest.Test.csproj", "{E6EF7423-094E-4012-9139-F1E66889131A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RpgChest.Test", "..\RpgChest.Test\RpgChest.Test.csproj", "{E6EF7423-094E-4012-9139-F1E66889131A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
