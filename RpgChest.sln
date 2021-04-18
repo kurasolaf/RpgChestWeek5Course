@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RpgChest", "RpgChest.csproj", "{06A7B9CA-26B0-4431-B004-751356286388}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RpgChest.Test", "..\RpgChest.Test\RpgChest.Test.csproj", "{E6EF7423-094E-4012-9139-F1E66889131A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RpgChest.Test", "..\RpgChest.Test\RpgChest.Test.csproj", "{ECC1D492-A5DE-4E4F-8A3B-C5C6347628EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{06A7B9CA-26B0-4431-B004-751356286388}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06A7B9CA-26B0-4431-B004-751356286388}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06A7B9CA-26B0-4431-B004-751356286388}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E6EF7423-094E-4012-9139-F1E66889131A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E6EF7423-094E-4012-9139-F1E66889131A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E6EF7423-094E-4012-9139-F1E66889131A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E6EF7423-094E-4012-9139-F1E66889131A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECC1D492-A5DE-4E4F-8A3B-C5C6347628EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECC1D492-A5DE-4E4F-8A3B-C5C6347628EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECC1D492-A5DE-4E4F-8A3B-C5C6347628EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECC1D492-A5DE-4E4F-8A3B-C5C6347628EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

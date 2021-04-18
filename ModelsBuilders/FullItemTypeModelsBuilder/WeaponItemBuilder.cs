@@ -40,20 +40,21 @@ namespace RpgChest
             switch (gear)
             {
                 case 1:
-                    return WeaponsItemChoose.Shield;
+                    return WeaponsItemChoose.LongBow;
                 case 2:
                     return WeaponsItemChoose.Bows;
                 case 3:
-                    return WeaponsItemChoose.Crossbow;
+                    return WeaponsItemChoose.ElvenBow;
                 case 4:
-                    return WeaponsItemChoose.Sword;
+                    return WeaponsItemChoose.Crossbow;
                 case 5:
-                    return WeaponsItemChoose.Staff;
+                    return WeaponsItemChoose.OneHSword;
+                case 6:
+                    return WeaponsItemChoose.MagicalStaff;
                 default:
                     throw new Exception("error  - WeaponItemChoose");
 
             }
-
 
 
 
