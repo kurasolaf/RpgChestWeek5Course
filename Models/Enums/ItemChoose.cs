@@ -28,7 +28,7 @@ namespace RpgChest.ItemChoose
         public enum WeaponsItemChoose
         {
             LongBow = 1,
-            Bows = 2,
+            Bow = 2,
             ElvenBow = 3,
             Crossbow = 4,
             OneHSword = 5,

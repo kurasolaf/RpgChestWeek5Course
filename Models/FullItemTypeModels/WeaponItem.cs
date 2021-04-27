@@ -11,7 +11,7 @@ namespace RpgChest
     public class WeaponItem : Item
     {
         public WeaponsItemChoose Type { get; set; }
-
+        public string WeaponName { get; set; }
       
 
 
@@ -19,7 +19,7 @@ namespace RpgChest
         public override string ToString()
         {
 
-            return $"\r\n It's {Type}\r\n LVL: {ItemLvl}\r\n DMG: {Dmg} \r\n Crit: {CritChance} \r\n ID:{Id}";
+            return $"\r\n It's {WeaponName}\r\n {Type}\r\n LVL: {ItemLvl}\r\n DMG: {Dmg} \r\n Crit: {CritChance} \r\n ID:{Id}";
 
         }
     }
