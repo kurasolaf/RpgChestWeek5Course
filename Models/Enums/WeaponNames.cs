@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace RpgChest
 {
-    class WeaponNames
-    {
+    
         enum WeaponAdjectiveEnum
         {
 
@@ -31,10 +30,5 @@ namespace RpgChest
 
 
 
-
-
-
-
-
-    }
+    
 }
