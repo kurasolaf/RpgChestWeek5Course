@@ -30,6 +30,19 @@ namespace RpgChest
 
         }
 
+        public int Random10()
+        {
+            int random10;
+            Random rnd10 = new Random();
+            random10 = rnd10.Next(1, 11);
+
+            return random10;
+
+        }
+
+
+
+
         public int RandomLvl()
         {
             int randomLvl;

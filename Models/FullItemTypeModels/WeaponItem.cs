@@ -22,5 +22,8 @@ namespace RpgChest
             return $"\r\n It's {WeaponName}\r\n {Type}\r\n LVL: {ItemLvl}\r\n DMG: {Dmg} \r\n Crit: {CritChance} \r\n ID:{Id}";
 
         }
+
+
+
     }
 }

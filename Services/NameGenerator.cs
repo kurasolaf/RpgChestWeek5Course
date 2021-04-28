@@ -40,8 +40,6 @@ namespace RpgChest
 
         }
 
-       
-
 
         private WeaponAdjectiveEnum RandomWeaponAdjectiveEnum()
         {
