@@ -14,12 +14,13 @@ namespace RpgChest
 
     {
         public GearItemChoose Type { get; set; }
+        public string ArmorName { get; set; }
     
 
         public override string ToString()
         {
 
-            return $"\r\n It's {Type},\r\n LVL: {ItemLvl}\r\n KP: {Kp} \r\n HP: {Hp} \r\n ID:{Id}";
+            return $"\r\n It's {ArmorName}\r\n {Type}\r\n LVL: {ItemLvl}\r\n KP: {Kp} \r\n HP: {Hp} \r\n ID:{Id}";
 
         }
 

@@ -6,6 +6,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using RpgChest.ItemChoose;
+using RpgChest.Models.Enums;
 
 namespace RpgChest
 {
@@ -24,6 +25,23 @@ namespace RpgChest
             return name;
 
         }
+
+        public string ArmorNameGenerator(GearItemChoose type)
+        {
+            GearItemChoose itType = type;
+            string name;
+            var adjective = RandomArmorAdjectiveEnum();
+            var noun = RandomArmorNounEnum();
+            name = $"{itType} of {adjective} {noun}";
+
+            return name;
+
+
+
+        }
+
+       
+
 
         private WeaponAdjectiveEnum RandomWeaponAdjectiveEnum()
         {
@@ -83,7 +101,55 @@ namespace RpgChest
 
         }
 
-     
+        private ArmorAdjectiveEnum RandomArmorAdjectiveEnum()
+        {
+            Randomizers rand5 = new Randomizers();
+            int rand = rand5.Random5();
+            switch (rand)
+            {
+
+                case 1:
+                    return ArmorAdjectiveEnum.Holy;
+                case 2:
+                    return ArmorAdjectiveEnum.Sacred;
+                case 3:
+                    return ArmorAdjectiveEnum.Strong;
+                case 4:
+                    return ArmorAdjectiveEnum.Tough;
+                case 5:
+                    return ArmorAdjectiveEnum.Immortal;
+                default:
+                    throw new Exception("Error in Random Armor generator for Adjective");
+
+
+            }
+
+
+        }
+
+        private ArmorNounEnum RandomArmorNounEnum()
+        {
+            Randomizers rand5 = new Randomizers();
+            int rand = rand5.Random5();
+
+            switch (rand)
+            {
+                case 1:
+                    return ArmorNounEnum.Steel;
+                case 2:
+                    return ArmorNounEnum.Bone;
+                case 3:
+                    return ArmorNounEnum.Turtle;
+                case 4:
+                    return ArmorNounEnum.Angel;
+                case 5:
+                    return ArmorNounEnum.Templar;
+                default:
+                    throw new Exception("Error in Random Armor generator for Noun");
+
+            }
+
+        }
 
     }
 

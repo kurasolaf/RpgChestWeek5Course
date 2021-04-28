@@ -14,13 +14,16 @@ namespace RpgChest
         public Item ArmorRollForStat()
         {
             Randomizers statRandomizer = new Randomizers();
-
             ArmorItem armor = new ArmorItem();
+            NameGenerator name = new NameGenerator();
+            GearItemChoose type;
 
             armor.Hp = statRandomizer.Random5();
             armor.Kp = statRandomizer.Random5();
             armor.ItemLvl = statRandomizer.RandomLvl();
             armor.Type = GearRandomMethod();
+            type = armor.Type;
+            armor.ArmorName = name.ArmorNameGenerator(type);
             armor.Dmg = 0;
             armor.CritChance = 0;
             

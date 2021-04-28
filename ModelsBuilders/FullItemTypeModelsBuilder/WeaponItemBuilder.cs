@@ -61,14 +61,7 @@ namespace RpgChest
 
             }
 
-
-
-
-
         }
-
-
-     
 
     }
 }
