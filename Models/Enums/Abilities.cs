@@ -59,10 +59,10 @@ namespace RpgChest.Models.Enums
         KnowledgeOfIllusion = 50,
         SeeingTheFuture = 51,
         Imbuement = 52,
-        Armoursmith = 53,
+        Armorsmith = 53,
         Weaponsmith = 54,
         Tailoring = 55,
-        Skining = 57,
+        Skinning = 57,
         Aiming = 58
 
     }

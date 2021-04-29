@@ -59,7 +59,6 @@ namespace RpgChest
         public void ItemDetailView(int detailId)
         {
 
-        
             foreach (var item in Items)
             {
                 if (item.Id == detailId )
@@ -68,10 +67,8 @@ namespace RpgChest
                     break;
                 }
                 
-                
             }
- 
-
+            
         }
 
 
@@ -82,18 +79,18 @@ namespace RpgChest
             int id;
             Int32.TryParse(itemId.KeyChar.ToString(), out id);
 
+
             return id;
         }
+
 
         public void ItemListView()
         {
             foreach (var item in Items)
             {
-
+                
                 Console.WriteLine($"ID:{item.Id} Item LVL:{item.ItemLvl}"); 
             }
-
-
 
         }
     }

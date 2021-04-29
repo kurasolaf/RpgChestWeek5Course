@@ -66,6 +66,8 @@ namespace RpgChest
             }
   
         }
+
+        //method for manual rolling item
         public GearItemChoose GearRandomMethod(int numb)
         {
             
