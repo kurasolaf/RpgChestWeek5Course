@@ -39,14 +39,17 @@ namespace RpgChest
                     Console.WriteLine("\r\n");
                     mainItemList.MakingFullItem();
                     break;
-
                 case '3':
-                    Console.WriteLine("\r\n LIST OF ALL ITEMS");
+                    mainItemList.AskingForMultiplier();
+                    break;
+
+                case '4': 
+                    Console.WriteLine("\r\n LIST OF ALL ITEMS"); 
                     mainItemList.ItemListView();
 
                     break;
 
-                case '4':
+                case '5':
                     var detailId = mainItemList.ItemDetailSelectionView();
                     mainItemList.ItemDetailView(detailId);
                     break;
@@ -62,9 +65,10 @@ namespace RpgChest
         private static MenuActionService Initialize(MenuActionService actionService)
         {
             actionService.AddNewAction(1, "Add new item manually - not implemented yet", "Main" );
-            actionService.AddNewAction(2, "Roll for random Item", "Main");
-            actionService.AddNewAction(3, "List of Items", "Main");
-            actionService.AddNewAction(4, "Detailed Item", "Main");
+            actionService.AddNewAction(2, "Roll for one random Item", "Main");
+            actionService.AddNewAction(3,"Roll for multiple random Items", "Main");
+            actionService.AddNewAction(4, "List of Items", "Main");
+            actionService.AddNewAction(5, "Detailed Item", "Main");
 
             return actionService;
         }

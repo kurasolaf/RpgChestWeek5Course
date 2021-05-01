@@ -7,6 +7,7 @@ using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Channels;
 using RpgChest.ItemChoose;
 
@@ -18,80 +19,124 @@ namespace RpgChest
     // 
     /////////////////////////To DO///////////////////////
     public class ItemService
+
     {
 
-        private int LastId { get; set; } = 1;
+    private int LastId { get; set; } = 1;
 
-        public List<Item> Items { get; set; } = new List<Item>();
+    public List<Item> Items { get; set; } = new List<Item>();
 
-        public void MakingFullItem()
+
+
+    public void MakingFullItem()
+    {
+        Item fullItem = ItemBuilder();
+
+        fullItem.Id = LastId++;
+
+
+
+        Items.Add(fullItem);
+        Console.WriteLine("Item has been generated");
+
+    }
+
+    public void AskingForMultiplier()
+    {
+        Console.WriteLine("\r\n Enter how many items should be rolled");
+        int rollTimeNumber;
+        rollTimeNumber = Int32.Parse(Console.ReadLine());
+        MultipleMakingFullItem(rollTimeNumber);
+
+    }
+
+
+
+    public void MultipleMakingFullItem(int rollTimeNumber)
+    {
+        int maxRoll = rollTimeNumber;
+
+        for (int i = 0; i <= maxRoll; i++)
         {
-            Item fullItem = ItemBuilder();
+            MakingFullItem();
+        }
+    }
 
-            fullItem.Id = LastId++; 
 
-            Items.Add(fullItem);
-            Console.WriteLine("Item has been generated");
 
+
+
+
+    public Item ItemBuilder()
+    {
+        Randomizers randomizers = new Randomizers();
+        int rand2 = randomizers.Random2();
+
+
+        switch (rand2)
+        {
+            case 1:
+                ArmorItemBuilder armorItemBuilder = new ArmorItemBuilder();
+                return armorItemBuilder.ArmorRollForStat();
+
+            case 2:
+                WeaponItemBuilder weaponItemBuilder = new WeaponItemBuilder();
+                return weaponItemBuilder.WeaponRollForStat();
+            default:
+                throw new InvalidOperationException("Unknown item type");
         }
 
-        public Item ItemBuilder()
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    public void ItemDetailView(int detailId)
+    {
+
+        foreach (var item in Items)
         {
-            Randomizers randomizers = new Randomizers();
-            int rand2 = randomizers.Random2();
-
-   
-            switch (rand2)
+            if (item.Id == detailId)
             {
-                case 1:
-                    ArmorItemBuilder armorItemBuilder = new ArmorItemBuilder();
-                    return armorItemBuilder.ArmorRollForStat();
-
-                case 2:
-                    WeaponItemBuilder weaponItemBuilder = new WeaponItemBuilder();
-                    return weaponItemBuilder.WeaponRollForStat();
-                default:
-                    throw new InvalidOperationException("Unknown item type");
+                Console.WriteLine(item.ToString());
+                break;
             }
 
         }
 
-        public void ItemDetailView(int detailId)
+    }
+
+
+    public int ItemDetailSelectionView()
+    {
+        Console.WriteLine("\r\nPlease enter ID, for details to show");
+        var itemId = Console.ReadKey();
+        int id;
+
+
+        Int32.TryParse(itemId.KeyChar.ToString(), out id);
+
+
+        return id;
+    }
+
+
+    public void ItemListView()
+    {
+        foreach (var item in Items)
         {
 
-            foreach (var item in Items)
-            {
-                if (item.Id == detailId )
-                {
-                    Console.WriteLine(item.ToString());
-                    break;
-                }
-                
-            }
-            
+            Console.WriteLine($"ID:{item.Id} Item LVL:{item.ItemLvl}");
         }
 
-
-        public int ItemDetailSelectionView()
-        {
-            Console.WriteLine("\r\nPlease enter ID, for details to show");
-            var itemId = Console.ReadKey();
-            int id;
-            Int32.TryParse(itemId.KeyChar.ToString(), out id);
-
-
-            return id;
-        }
-
-
-        public void ItemListView()
-        {
-            foreach (var item in Items)
-            {
-                
-                Console.WriteLine($"ID:{item.Id} Item LVL:{item.ItemLvl}"); 
-            }
-
-        }
+    }
     }
 }
