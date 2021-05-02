@@ -8,7 +8,7 @@ namespace RpgChest.ItemChoose
     // GEAR ITEM CHOOSE: Armor, Legs, Helmet, Boots, Shield, Gloves, Ring, Necklace, Earrings, Belt
     //
     // WEAPON ITEM CHOOSE: Bows, LongBows, ElvenBows, Crossbow, Magical Staff, 1h Sword, 2h Sword, 1h Axe,
-    // 2h Axe, 1h Mace, 2h Hammer, Pike, Halberd
+    // 2h Axe, 1h Mace, 2h Hammer, Pike, Halberd and some more
     // 
     /////////////////////////To DO///////////////////////
         public enum GearItemChoose
