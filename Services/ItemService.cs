@@ -7,6 +7,7 @@ using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
 using System.Threading.Channels;
 using RpgChest.Helpers;
@@ -60,26 +61,53 @@ namespace RpgChest
         else if (valid == false)
         {
             
+            Console.WriteLine("Error, this is NOT a number (cw)");
+            
             throw new Exception("Error, this is NOT a number");
 
         }
-    
+        
 
+    }
+
+        //Overloaded AskingForMultiplier() For Testing
+        public void AskingForMultiplier(string dataIn)
+    {
+       
+        InputIntValidation InputValid = new InputIntValidation();
+
+        
+        string input;
+        input = dataIn;
+
+        bool valid = InputValid.InputNumber(input);
+
+        if (valid == true)
+        {
+            int rollTimeNumber;
+            rollTimeNumber = Int32.Parse(input);
+            MultipleMakingFullItem(rollTimeNumber);
+        }
+        else if (valid == false)
+        {
+            Console.WriteLine("Error, this is NOT a number (cw)");
+            throw new Exception("Error, this is NOT a number");
+
+        }
 
 
     }
-        
 
 
 
 
 
 
-    public void MultipleMakingFullItem(int rollTimeNumber)
+        public void MultipleMakingFullItem(int rollTimeNumber)
     {
         int maxRoll = rollTimeNumber;
 
-        for (int i = 0; i <= maxRoll; i++)
+        for (int i = 0; i < maxRoll; i++)
         {
             MakingFullItem();
         }
