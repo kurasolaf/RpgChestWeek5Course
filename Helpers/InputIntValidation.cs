@@ -13,10 +13,15 @@ namespace RpgChest.Helpers
 
         public bool InputNumber(string input)
         {
+            
+            
             string isNumeric = input;
             bool result = int.TryParse(isNumeric, out _);
 
             return result;
+
+
+
 
         }
 

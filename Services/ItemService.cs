@@ -56,7 +56,19 @@ namespace RpgChest
         {
             int rollTimeNumber;
             rollTimeNumber = Int32.Parse(input);
-            MultipleMakingFullItem(rollTimeNumber);
+
+            if (rollTimeNumber > 0)
+            {
+                MultipleMakingFullItem(rollTimeNumber);
+            }
+            else if (rollTimeNumber == 0)
+            {
+                Console.WriteLine("Error, you CANT multiply by 0 (cw)");
+            }
+            else
+            {
+                Console.WriteLine("Error, you CANT multiply by negative number (cw)");
+                }
         }
         else if (valid == false)
         {
