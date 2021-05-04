@@ -15,7 +15,7 @@ namespace RpgChest.Test
         [Fact]
         public void Test1()
         {
-            //TESTING//
+            //TESTING////
             //Arrange (make obj, prop, needed to make test)
             int a = 1;
             int b = 4;
