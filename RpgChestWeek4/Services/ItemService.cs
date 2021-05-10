@@ -161,8 +161,10 @@ namespace RpgChest
 
 
 
-
-    public void ItemDetailView(int detailId)
+        /// 
+        /// Refactor below with LINQ
+        /// 
+        public void ItemDetailView(int detailId)
     {
 
         foreach (var item in Items)
