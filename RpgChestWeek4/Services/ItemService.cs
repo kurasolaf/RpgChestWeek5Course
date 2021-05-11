@@ -65,20 +65,22 @@ namespace RpgChest
             {
 
                 Console.WriteLine("Error, you CANT multiply by 0 (cw)");
-
-            }
+                AskingForMultiplier();
+                }
             else
             {
                 Console.WriteLine("Error, you CANT multiply by negative number (cw)");
                 valid = false;
+                AskingForMultiplier();
+
             }
         }
         else if (valid == false)
         {
             
             Console.WriteLine("Error, this is NOT a number (cw)");
-            
-            throw new Exception("Error, this is NOT a number");
+
+            AskingForMultiplier();
 
         }
         
