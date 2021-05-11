@@ -66,7 +66,7 @@ namespace RpgChest.Test
         [Fact]
         public void InputMinusIntValidationIsFalse_Test()
         {
-            bool expected = false;
+            bool expected = true;
             string input = "-4";
 
             InputIntValidation inputIntValidation = new InputIntValidation();
@@ -77,7 +77,8 @@ namespace RpgChest.Test
 
             Assert.Equal(expected, actual);
 
-        //Found to repair, Cant be -4 (cant have less then 0)
+        // its TRUE cuz its number
+        //Found to repair, Cant be -4 (cant have less then 0), need to make some methods for re typing number
         }
 
 

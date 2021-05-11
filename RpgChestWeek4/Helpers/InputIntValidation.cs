@@ -16,8 +16,11 @@ namespace RpgChest.Helpers
             
             
             string isNumeric = input;
-            bool result = int.TryParse(isNumeric, out _);
 
+            
+            bool result = int.TryParse(isNumeric, out _);
+           
+            
             return result;
 
 

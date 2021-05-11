@@ -63,12 +63,15 @@ namespace RpgChest
             }
             else if (rollTimeNumber == 0)
             {
+
                 Console.WriteLine("Error, you CANT multiply by 0 (cw)");
+
             }
             else
             {
                 Console.WriteLine("Error, you CANT multiply by negative number (cw)");
-                }
+                valid = false;
+            }
         }
         else if (valid == false)
         {
