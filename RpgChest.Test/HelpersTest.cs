@@ -78,8 +78,7 @@ namespace RpgChest.Test
             Assert.Equal(expected, actual);
 
         // its TRUE cuz its number (found "bug" and its smashed)
-       
-        
+
         }
 
 

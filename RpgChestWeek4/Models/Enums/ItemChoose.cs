@@ -5,10 +5,10 @@ using System.Text;
 namespace RpgChest.ItemChoose
 {
     //////////////////////////To DO//////////////////////
-    // GEAR ITEM CHOOSE: Armor, Legs, Helmet, Boots, Shield, Gloves, Ring, Necklace, Earrings, Belt
+    // GEAR ITEM CHOOSE: 
     //
-    // WEAPON ITEM CHOOSE: Bows, LongBows, ElvenBows, Crossbow, Magical Staff, 1h Sword, 2h Sword, 1h Axe,
-    // 2h Axe, 1h Mace, 2h Hammer, Pike, Halberd and some more
+    // WEAPON ITEM CHOOSE:  
+    //  
     // 
     /////////////////////////To DO///////////////////////
         public enum GearItemChoose
@@ -32,7 +32,20 @@ namespace RpgChest.ItemChoose
             ElvenBow = 3,
             Crossbow = 4,
             OneHSword = 5,
-            MagicalStaff = 6
-        }
+            MagicalStaff = 6,
+            HeavyCrossbow = 7,
+            TwoHandSword = 8,
+            OneHandAxe = 9,
+            TwoHandAxe = 10,
+            OneHandHammer = 11,
+            TwoHandHammer = 12,
+            OneHandMace = 13,
+            TwoHandMace = 14,
+            Dagger = 15,
+            Spear = 16,
+            Halberd = 17,
+
+
+    }
 
 }
