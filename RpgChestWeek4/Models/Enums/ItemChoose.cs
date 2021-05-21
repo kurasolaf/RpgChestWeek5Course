@@ -44,8 +44,9 @@ namespace RpgChest.ItemChoose
             Dagger = 15,
             Spear = 16,
             Halberd = 17,
-
-
-    }
+            Pike = 18,
+            Sling = 19
+            
+        }
 
 }
