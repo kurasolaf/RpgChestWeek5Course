@@ -1,4 +1,5 @@
 ﻿using System;
+using RpgChest.Helpers;
 
 namespace RpgChest
 {
