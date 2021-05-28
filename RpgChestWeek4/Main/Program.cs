@@ -54,8 +54,12 @@ namespace RpgChest
                     var detailId = mainItemList.ItemDetailSelectionView();
                     mainItemList.ItemDetailView(detailId);
                     break;
+                case '6':
+                    PdfDownloader pdfDownloader = new PdfDownloader();
+                    pdfDownloader.PdfDownloadMethod();
+                    break;
 
-                default:
+                    default:
                     Console.WriteLine("Wrong action. please make correct one");
                     break;
                 }
@@ -70,6 +74,7 @@ namespace RpgChest
             actionService.AddNewAction(3,"Roll for multiple random Items", "Main");
             actionService.AddNewAction(4, "List of Items", "Main");
             actionService.AddNewAction(5, "Detailed Item", "Main");
+            actionService.AddNewAction(6, "PDF download", "Main");
 
             return actionService;
         }
